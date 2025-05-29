@@ -1,0 +1,406 @@
+body {
+
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #fefefe 0%, #f4f7fb 100%);
+  color: #222;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background-color: #d9f8f2;}
+ 
+.tagline {
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+
+
+/* features s */
+#features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+.feature {
+  background: #d9f8f2;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 1rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+
+#carbinfo {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.infoblock {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #fffbe6;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.infoblock.left {
+  align-self: flex-start;
+  background-color: #f0fff4
+}
+
+.infoblock.right {
+  align-self: flex-end;
+  background-color: #f0fff4;
+}
+
+
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.infoimage {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.infoimage img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.imagerow {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.imagerow img {
+
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+
+/* Snack List section */
+#snacks {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#snacklist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.snackcard {
+  background: #d9f8f2;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 220px;
+  transition: transform 0.2s ease;
+}
+
+.snackcard:hover {
+  transform: scale(1.03);
+}
+
+.snackcard h2 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+
+.snackcard p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #777;
+  background: #d9f8f2;
+  margin-top: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 700px) {
+  #features, #snacklist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #carbinfo {
+    padding: 2rem 1rem;
+  }
+
+  .infoblock.left, .infoblock.right {
+    align-self: center;
+  }
+
+  .introcontainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .introtext h1 {
+    font-size: 2.2rem;
+  }
+
+  .introtext p {
+    font-size: 1.05rem;
+  }
+}
+#snackform {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #d9f8f2;
+  border-top: 1px solid #ddd;
+}
+
+#snackform h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+#addsnackform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#addsnackform input {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#addsnackform button {
+  padding: 0.5rem 1rem;
+  background-color: #4cbfa6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#addsnackform button:hover {
+  background-color: #3a9f8b;
+}
+#nutrition {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #fefefe;
+}
+
+.nutritiontablewrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.nutritiontable {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.nutritiontable th,
+.nutritiontable td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.nutritiontable th {
+  background-color: #e0f7f1;
+  font-weight: bold;
+}
+
+.nutritiontable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#whatarecarbs {
+  padding: 2rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#toggledefinition {
+  background-color: #4cbfa6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#toggledefinition:hover {
+  background-color: #3a9f8b;
+}
+
+#carbdefinition {
+  margin-top: 1.4rem;
+  font-size: 1.4rem;
+  color: #444;
+  line-height: 1.6;
+}
+#typesofcarbs {
+  padding: 2rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#carbtypes {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+
+
+}
+
+/* intro s */
+.introcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+}
+
+.introtext {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.introtext h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+
+
+.introtext p {
+  
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.6;
+}
+
+.introimage {
+
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.introimage img {
+
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.introtext h1 {
+
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+
+.togglebutton {
+
+  background-color: #4cbfa6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem;
+  margin: 1rem 0;
+
+}
+
+.togglebutton:hover {
+  background-color: #3a9f8b;
+}
+
+
+.carbimage {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.carbimage img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+

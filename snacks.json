@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Cheese & Crackers",
+      "carbs": "15g",
+      "sugar": "1g"
+    },
+    {
+      "name": "Greek Yogurt (plain)",
+      "carbs": "6g",
+      "sugar": "4g"
+    
+    },
+    {
+      "name": "Apple Slices",
+      "carbs": "20g",
+      "sugar": "17g"
+    },
+    {
+      "name": "Rice Cakes with Peanut Butter",
+      "carbs": "18g",
+      "sugar": "3g"
+    },
+    {
+      "name": "Dark Chocolate (2 squares)",
+      "carbs": "10g",
+      "sugar": "5g"
+    }
+  ]

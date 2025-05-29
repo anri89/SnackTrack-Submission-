@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnackTrack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>SnackTrack</h1>
+    <p class="tagline">Smart snacking for type 1 diabetes</p>
+
+  </header>
+
+  <!-- intro-->
+<div class="introcontainer">
+  <div class="introtext">
+    <h1>Why Carb Counting Matters</h1>
+    <p>
+      For people with type 1 diabetes, carbs affect blood sugar a lot. They're basically sugar fuel
+      If you know how much you're eating, it's easier to take the right insulin and avoid sugar highs or crashes
+      <strong>SnackTrack</strong> helps you figure that out easily
+    </p>
+  </div>
+  <div class="introimage">
+      <!-- pretty image showing assorted healthy snacks -->
+      <img src="Images/food.pic.1.jpg" alt="Assorted healthy snacks">
+  </div>
+</div>
+
+<!-- features s ection -->
+<section id="features">
+  <div class="feature">
+    <h3>Carb Counting</h3>
+    <p>Helps you control your glucose better</p>
+  </div>
+  <div class="feature">
+    <h3>Balanced Choices</h3>
+    <p>Find snacks that are tasty <em>and</em> smart</p>
+  </div>
+  <div class="feature">
+    <h3>Reminders</h3>
+    <p>Snack on time without overthinking</p>
+  </div>
+</section>
+
+<!-- definition of Carbs Section -->
+<section id="whatarecarbs">
+  <button id="toggledefinition" class="togglebutton">What are carbs?</button>
+  <div id="carbdefinition" style="display: none;">
+    <p>
+      Carbs turn into sugar in your blood. They give energy but can raise blood sugar fast 
+      especially important to watch if you’re managing type 1 diabetes
+    </p>
+  </div>
+</section>
+
+<!-- carb gaphic and image -->
+<div class="carbimage">
+  <img src="Images/after.carbs.jpg" alt="Type 1 diabetes info graphic">
+</div>
+
+<!-- details about Carbs Types -->
+<section id="typesofcarbs">
+  <button id="toggletypes" class="togglebutton">Types of carbs</button>
+  <div id="carbtypes" style="display: none;">
+    <p>
+      <strong>Simple carbs</strong> (like juice or sweets) hit your blood sugar fast<br>
+      <strong>Complex carbs</strong> (like oats or beans) take longer and keep you full
+    </p>
+  </div>
+
+  <!-- hidden carbs explanation -->
+  <section id="spottinghiddencarbs">
+    <button id="togglehidden" class="togglebutton">Spotting Hidden Carbs</button>
+    <div id="hiddencarbs" style="display: none;">
+      <p>Carbs can sneak into stuff like:</p>
+      <ul>
+        <li>Sauces</li>
+        <li>Fruit juice</li>
+        <li>Yoghurts or bars</li>
+      </ul>
+      <p>Always check labels &mdash; small things add up</p>
+    </div>
+  </section>
+
+  <!-- eating out tips section (personal advice)-->
+  <section id="eatingouttips">
+    <button id="toggletips" class="togglebutton">Tips for eating out</button>
+    <div id="tipssection" style="display: none;">
+      <ul>
+        <li>Look for nutrition info online or ask</li>
+        <li>Stick to meals you know the carb count for</li>
+        <li>Ask to swap chips for salad, it’s fine</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- estimation help section -->
+  <section id="estimatehelp">
+    <button id="toggleestimate" class="togglebutton">When in doubt, estimate</button>
+    <div id="estimatesection" style="display: none;">
+      <p>If you're not sure, it’s okay, just use stuff like:</p>
+      <ul>
+        <li><strong>Carbs & Cals app</strong></li>
+        <li><strong>Food packaging</strong></li>
+        <li><strong>This guide</strong></li>
+      </ul>
+      <p>It gets easier with practice</p>
+    </div>
+  </section>
+</section>
+
+<!-- carb information section -->
+<section id="carbinfo">
+
+  <div class="infoblock left">
+    <h2>why carb counting matters</h2>
+    <p>Matching insulin to carbs makes blood sugar easier to manage, especially with basal/bolus insulin</p>
+  </div>
+
+  <div class="infoblock right">
+    <h2>How it works</h2>
+    <p>Count carbs by grams or in 10g chunks, ask your diabetes team what’s best for you</p>
+  </div>
+
+  <div class="infoblock left">
+    <h2>Insulin to carb ratio</h2>
+    <p>If your ratio is 1:10, and your meal is 70g of carbs, then you need 7 units of insulin</p>
+  </div>
+
+  <div class="imagerow">
+    <!-- Just some images to make the page lively -->
+    <img src="Images/section.pic.1.jpg" alt="Image 1">
+    <img src="Images/section.pic.2.jpg" alt="Image 2">
+    <img src="Images/section.pic.3.jpg" alt="Image 3">
+  </div>
+
+  <div class="infoblock right">
+    <h2>3 Ways to Start</h2>
+    <ul>
+      <li>Figure out which foods have carbs</li>
+      <li>Read food labels</li>
+      <li>Practice guessing with food lists</li>
+    </ul>
+  </div>
+
+  <div class="infoblock left">
+    <h2>Final tips</h2>
+    <ul>
+
+      <li>Check food labels often</li>
+      <li>Use apps or a kitchen scale</li>
+      <li>Keep learning and ask questions</li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- another information image -->
+<div class="infoimage">
+  <img src="Images/food.pic.2.jpg" alt="Healthy food assortment">
+</div>
+
+<!-- the nutrition table section, based on the real ones -->
+<section id="nutrition">
+  <h2>Nutrition table (Carbs per portion)</h2>
+  <div class="nutritiontablewrapper">
+    <table class="nutritiontable">
+      <thead>
+        <tr>
+          <th>Food/Drink</th>
+          <th>Portion Size</th>
+          <th>Carbs (g)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>White Bread</td>
+          <td>1 slice (40g)</td>
+          <td>18g</td>
+        </tr>
+        <tr>
+          <td>Wholemeal Bread</td>
+          <td>1 slice (40g)</td>
+          <td>15g</td>
+        </tr>
+        <tr>
+          <td>Milk</td>
+          <td>200ml</td>
+          <td>10g</td>
+        </tr>
+        <tr>
+          <td>Pasta</td>
+          <td>180g cooked</td>
+          <td>54g</td>
+        </tr>
+        <tr>
+          <td>Rice</td>
+          <td>150g cooked</td>
+          <td>45g</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>1 medium</td>
+          <td>20g</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>1 medium</td>
+          <td>23g</td>
+        </tr>
+        <tr>
+          <td>Juice</td>
+          <td>150ml</td>
+          <td>15g</td>
+        </tr>
+        <tr>
+          <td>Boiled Potatoes</td>
+          <td>180g</td>
+          <td>30g</td>
+        </tr>
+        <tr>
+          <td>Baked Beans</td>
+          <td>100g</td>
+          <td>12g</td>
+        </tr>
+        <tr>
+          <td>Yoghurt</td>
+          <td>125g</td>
+          <td>8g</td>
+        </tr>
+        <tr>
+          <td>Crisps</td>
+          <td>25g bag</td>
+          <td>13g</td>
+        </tr>
+        <tr>
+          <td>Chocolate</td>
+          <td>40g bar</td>
+          <td>25g</td>
+        </tr>
+        <tr>
+          <td>Digestive Biscuit</td>
+          <td>1</td>
+          <td>8g</td>
+        </tr>
+        <tr>
+          <td>Cereal</td>
+          <td>30g + milk</td>
+          <td>28g</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- snack submission form -->
+<section id="snackform">
+  <h2>Add a new snack</h2>
+  <form id="addsnackform">
+    <!-- personal note i really like simple forms -->
+    <input type="text" id="snackname" placeholder="Snack Name" required>
+    <input type="text" id="snackcarbs" placeholder="Carbs (e.g. 15g)" required>
+    <input type="text" id="snacksugar" placeholder="Sugar (e.g. 8g)" required>
+    <button type="submit">Add snack</button>
+  </form>
+</section>
+
+<!-- snack lost display -->
+<section id="snacks">
+  <h2>Snack list</h2>
+  <div id="snacklist"></div>
+</section>
+
+<!-- footer with contact info -->
+<footer>
+  <p>Contact: anri.grisins23@bathspa.ac.uk</p>
+</footer>
+
+<!-- including our main script file (might clean this up later) -->
+<script src="script.js"></script>
+</body>
+
+</html>
